@@ -1,6 +1,6 @@
 # Udacity-Self-Driving-Car-Engineer
 
-Udacity - Self-Driving Car NanoDegree This repository contains code for a project I did as a part of Udacity's Self Driving Car Nano Degree Program. The goal is to write a software pipeline to identify the road lane boundaries in a video.
+The goal is to write a software pipeline to identify the road lane boundaries in a video.
 
 The Steps
 The steps of this project are listed below. You can have a look at Advanced_Lane_Lines.ipynb for the code.
@@ -9,6 +9,7 @@ The steps of this project are listed below. You can have a look at Advanced_Lane
 
 The images for camera calibration are stored in the folder called camera_cal. I compute the camera matrix and distortion co-efficients to undistort the image.
 
+![image1](https://raw.githubusercontent.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/main/P2%20Advanced%20Lane%20Finding/test_images_output/straight_lines1_result.jpg)
 
 
 ###Gradients and color thresholds. I applied thresholds on gradients and colors (in RGB and HLS color spaces) to obtain a binary thresholded image.
