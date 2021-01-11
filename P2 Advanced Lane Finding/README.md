@@ -2,6 +2,14 @@
 
 The goal is to write a software pipeline to identify the road lane boundaries in a video.
 
+Check out the Video of the result:
+[![Watch the video](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/WatchOnYoutube.jpg?raw=true)](https://youtu.be/H50zBnFf17c)
+
+
+
+
+
+
 The Steps
 The steps of this project are listed below. You can have a look at Advanced_Lane_Lines.ipynb for the code.
 
@@ -26,10 +34,5 @@ Combine the precessed image with the original image.
 ![image7](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/addInfo.jpg?raw=true)
 ### Example Result We apply the pipeline to a test image. The original image and the processed image are shown side by side.
 
-The Video
-The pipeline is applied to a video. Click on the image to watch the video or click here. You will be redirected to YouTube.
 
-
-
-[![Watch the video](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/addWeighted.jpg?raw=true)](https://youtu.be/H50zBnFf17c)
 
