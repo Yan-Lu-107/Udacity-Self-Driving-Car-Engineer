@@ -1,6 +1,29 @@
-# Udacity-Self-Driving-Car-Engineer
+# README
 
-The goal is to write a software pipeline to identify the road lane boundaries in a video.
+
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
+
+
+**Advanced Lane Finding Project**
+
+The goals / steps of this project are the following:
+
+* Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
+* Apply a distortion correction to raw images.
+* Use color transforms, gradients, etc., to create a thresholded binary image.
+* Apply a perspective transform to rectify binary image ("birds-eye view").
+* Detect lane pixels and fit to find the lane boundary.
+* Determine the curvature of the lane and vehicle position with respect to center.
+* Warp the detected lane boundaries back onto the original image.
+* Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
+* Implement plausibilization/tracking mechanisms for continuous lane detection and processing based on the video
+* Feed the project video to the developed pipeline and visualize the estimated lane as well as the estimated curvatures (left and right) and the vehicle's offset from the lane center
+
+Check out the Video of the result:
+[![Watch the video](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/WatchOnYoutube.jpg?raw=true)](https://youtu.be/H50zBnFf17c)
+
+
 
 The Steps
 The steps of this project are listed below. You can have a look at Advanced_Lane_Lines.ipynb for the code.
@@ -26,9 +49,5 @@ Combine the precessed image with the original image.
 ![image7](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/addInfo.jpg?raw=true)
 ### Example Result We apply the pipeline to a test image. The original image and the processed image are shown side by side.
 
-The Video
-The pipeline is applied to a video. Click on the image to watch the video or click here. You will be redirected to YouTube.
-
-[![Watch the video](image8)](https://youtu.be/H50zBnFf17c)
 
 
