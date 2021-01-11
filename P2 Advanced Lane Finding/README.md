@@ -29,6 +29,7 @@ Combine the precessed image with the original image.
 The Video
 The pipeline is applied to a video. Click on the image to watch the video or click here. You will be redirected to YouTube.
 
-[![Watch the video](image8)](https://youtu.be/H50zBnFf17c)
+[![Watch the video](![image8](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/addWeighted.jpg?raw=true)
+)](https://youtu.be/H50zBnFf17c)
 
 
