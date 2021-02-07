@@ -11,8 +11,8 @@ steering_angles =[]
 lines=[]
 
 
-file_path='/Users/yanlu/Documents/GitHub/Udacity-Self-Driving-Car-Engineer/CarND-Behavioral-Cloning-P3/data/'
-file_names=["1","2","reverse1","reverse2","reverse3","back2center1","back2center2","back2center3"]
+file_path='/Udacity-Self-Driving-Car-Engineer/CarND-Behavioral-Cloning-P3/data/'
+file_names=["reverse1","reverse2","back2center1","back2center2"]
 
 for file_name in file_names:
     folder_path = file_path+file_name+'/IMG/'
