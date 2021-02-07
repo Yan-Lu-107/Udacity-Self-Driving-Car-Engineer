@@ -28,8 +28,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 
 train_samples, validation_samples = train_test_split(lines, test_size=0.2)
-train_samples=train_samples[0][0:6]
-validation_samples=validation_samples[0][0:6]
+
 
 def generator(lines, batch_size=32):
     num_samples = len(lines)
