@@ -5,24 +5,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-
 car_images=[]
 steering_angles =[] 
 lines=[]
-
-
-file_path='/GitHub/Udacity-Self-Driving-Car-Engineer/CarND-Behavioral-Cloning-P3/data/'
-file_names=["1","2","reverse1","reverse2","reverse3","back2center1","back2center2","back2center3"]
-
+X_train=[]
+y_train=[]
+file_path="data_local/"
+file_names=["1"]
 
 for file_name in file_names:
-    lines=[]
     folder_path = file_path+file_name+'/IMG/'
     with open(file_path+file_name+'/driving_log.csv') as csvfile:
         reader =csv.reader(csvfile)
         for line in reader:
             line.append(folder_path)
-            lines.append(line)  
+            lines.append(line) 
+               
  
 import sklearn
 from sklearn.model_selection import train_test_split
@@ -30,14 +28,15 @@ from sklearn.utils import shuffle
 
 train_samples, validation_samples = train_test_split(lines, test_size=0.2)
 
-
-def generator(lines, batch_size=32):
+def generator(lines, batch_size=8):
     num_samples = len(lines)
     while 1: # Loop forever so the generator never terminates
-        sklearn.utils.shuffle(lines)
+        #sklearn.utils.shuffle(lines)
         for offset in range(0, num_samples, batch_size):
             batch_samples = lines[offset:offset+batch_size]            
             for batch_sample in batch_samples:
+
+
                 image_center_path = batch_sample[7]+batch_sample[0].split('/')[-1]
                 image_left_path = batch_sample[7]+batch_sample[1].split('/')[-1]
                 image_right_path = batch_sample[7]+batch_sample[2].split('/')[-1]
@@ -62,10 +61,19 @@ def generator(lines, batch_size=32):
             # trim image to only see section with road
             X_train = np.array(car_images)
             y_train = np.array(steering_angles)
-            yield sklearn.utils.shuffle(X_train, y_train)
+
+            print("batch_samples",len(batch_samples))
+            print("car_images",len(car_images))
+            print("steering_angles",len(steering_angles))
+            print("X_train",len(X_train))
+            print("y_train",len(y_train))
+            print("-"*80)
+
+    yield (X_train,y_train)
+
         
 # Set our batch size
-batch_size=32
+batch_size=8
 
 # compile and train the model using the generator function
 train_generator = generator(train_samples, batch_size=batch_size)
@@ -88,10 +96,12 @@ model.add(MaxPooling2D())
 #model.add(Convolution2D(6,5,5,activation="relu"))
 #model.add(MaxPooling2D())
 model.add(Flatten())
+model.add(Dense(360))
+
 model.add(Dense(120))
 model.add(Dense(84))
 model.add(Dense(1))
-#model.summary() 
+model.summary() 
 
 
 model.compile(loss='mse', optimizer='adam')
@@ -100,3 +110,6 @@ model.fit_generator(train_generator,\
             validation_data=validation_generator, \
             validation_steps=math.ceil(len(validation_samples)/batch_size), epochs=4, verbose=1)
 model.save('model.h5')
+#cd /home/workspace/CarND-Behavioral-Cloning-P3
+#python model.py
+#python drive.py model.h5
