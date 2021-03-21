@@ -87,7 +87,7 @@ print("Number of validation examples =", validation_number)
 
 
 from keras.models import Sequential
-from keras.layers import Flatten, Dense, Lambda, Cropping2D
+from keras.layers import Flatten, Dense, Lambda, Cropping2D,Dropout
 from keras.layers.convolutional import Convolution2D
 from keras.layers.pooling import MaxPooling2D
 import matplotlib.pyplot as plt
@@ -97,12 +97,23 @@ model = Sequential()
 # Preprocess incoming data, centered around zero with small standard deviation 
 model.add(Lambda(lambda x:x/255.0 - 0.5, input_shape=(row, col, ch)))
 model.add(Cropping2D(cropping=((70,25),(0,0))))#crop useless background
-model.add(Convolution2D(24,5,5,subsample=(2,2),activation="relu"))
-model.add(Convolution2D(36,5,5,subsample=(2,2),activation="relu"))
-model.add(Convolution2D(48,5,5,subsample=(2,2),activation="relu"))
-model.add(Convolution2D(64,3,3,activation="relu"))
-model.add(Convolution2D(64,3,3,activation="relu"))
+model.add(Convolution2D(24,5,5,subsample=(2,2),activation="elu"))
+model.add(Dropout(0.25))
+
+model.add(Convolution2D(36,5,5,subsample=(2,2),activation="elu"))
+model.add(Dropout(0.25))
+
+model.add(Convolution2D(48,5,5,subsample=(2,2),activation="elu"))
+model.add(Dropout(0.25))
+
+model.add(Convolution2D(64,3,3,activation="elu"))
+model.add(Dropout(0.25))
+
+model.add(Convolution2D(64,3,3,activation="elu"))
 model.add(Flatten())
+model.add(Dropout(0.25))
+
+model.add(Dense(500))
 model.add(Dense(100))
 model.add(Dense(50))
 model.add(Dense(10))
@@ -113,7 +124,7 @@ model.compile(loss='mse', optimizer='adam')
 history_object=model.fit_generator(train_generator,\
             steps_per_epoch=math.ceil(len(train_samples)/batch_size), \
             validation_data=validation_generator, \
-            validation_steps=math.ceil(len(validation_samples)/batch_size), epochs=5, verbose=1)
+            validation_steps=math.ceil(len(validation_samples)/batch_size), epochs=20, verbose=1)
 model.save('model.h5')
 
 
@@ -127,7 +138,6 @@ plt.title('model mean squared error loss')
 plt.ylabel('mean squared error loss')
 plt.xlabel('epoch')
 plt.legend(['training set', 'validation set'], loc='upper right')
-plt.show()
 plt.savefig('lossimage.png')
 
 
@@ -135,6 +145,8 @@ plt.savefig('lossimage.png')
 #python modeltest.py
 #python drive.py model.h5
 #python drive.py model.h5 run1
+#python video.py
+
 
 #file_names=["1","2","OnEdge","back2center1","back2center2","back2center3","reverse1","reverse2","reverse3"]
 
