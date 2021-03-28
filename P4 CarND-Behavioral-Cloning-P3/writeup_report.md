@@ -15,12 +15,14 @@ The goals / steps of this project are the following:
 [image2]: ./examples/recoveryfromleft2center.gif "Recovery from Left to Center"
 
 [image3]: ./examples/center.png "Original Image"
-[image4]: ./examples/center.png "Flipped Image"
+[image4]: ./examples/FlippedImage.png "Flipped Image"
 
-[image5]: ./examples/loss1.png "Model Loss"
-[image6]: ./examples/loss2.png "Model Loss"
-[image7]: ./examples/loss3.png "Model Loss"
-[image8]: ./examples/loss4.png "Model Loss"
+[image5]: ./examples/NvidiaModel.png "Model"
+
+[image6]: ./examples/loss1.png "Model Loss"
+[image7]: ./examples/loss2.png "Model Loss"
+[image8]: ./examples/loss3.png "Model Loss"
+[image9]: ./examples/loss4.png "Model Loss"
 
 
 ## Rubric Points
@@ -80,7 +82,9 @@ I used this training data for training the model. The validation set helped dete
 
 #### 2. An appropriate model architecture has been employed
 
-The model used NVIDIA consists of five convolution layers with 5x5 and 3x3 kernel sizes and then follows four fully connected layers.(model.py lines 111-138) The model includes ELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer (code line 111). 
+The model used NVIDIA consists of five convolution layers with 5x5 and 3x3 kernel sizes and then follows four fully connected layers.(model.py lines 111-138) 
+
+The model includes ELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer (code line 111). 
 
 Layer 1: Conv layer with 24 5x5 filters, followed by ELU activation
 Layer 2: Conv layer with 36 5x5 filters, ELU activation
@@ -93,20 +97,20 @@ Layer 7: Fully connected layer with 100 neurons, ELU activation
 Layer 8: Fully connected layer with 50 neurons, ELU activation
 Layer 9: Fully connected layer with 10 neurons, ELU activation
 Layer 10: Fully connected layer with 1 neurons, ELU activation
-
+	![alt text][image5]
 #### 3. Attempts to reduce overfitting in the model
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that the loss for training set and validation set become so different with epoch increasing.The mean squared error on the training set becomes lower, but the mean squared error on the validation set are stable after epoch at 8. 
-	![alt text][image5]
+	![alt text][image6]
 
 After I changed epoch to 8, the validation loss increased after epoch 3. so I tried to add dropout.
-	![alt text][image6]
-After dropout added, the loss chart looks much better, but the performance of the car is still not good.
 	![alt text][image7]
+After dropout added, the loss chart looks much better, but the performance of the car is still not good.
+	![alt text][image8]
 
 
 Then I tried to decrease the epoch and it turns out the car performance best at epoch 7.
-	![alt text][image8]
+	![alt text][image9]
 
 #### 4. Model parameter tuning
 

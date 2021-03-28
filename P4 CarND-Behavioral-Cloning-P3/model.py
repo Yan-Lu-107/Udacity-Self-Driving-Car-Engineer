@@ -28,6 +28,7 @@ def pre_process_image(image):
     colored_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     # Cropping the image
     return colored_image
+    
 import sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
@@ -158,10 +159,3 @@ plt.xlabel('epoch')
 plt.legend(['training set', 'validation set'], loc='upper right')
 plt.savefig('lossimage.png')
 
-
-#cd /home/workspace/CarND-Behavioral-Cloning-P3
-#python model.py
-#python drive.py model.h5
-#python drive.py model.h5 run1
-#python video.py run1
-#file_names=["1","2","OnEdge","back2center1","back2center2","back2center3","reverse1","reverse2","reverse3"]
