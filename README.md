@@ -29,7 +29,7 @@ In this repository you may find the source code of all the projects of [Udacity 
         </p>
     </th>
         <th><p align="center">
-           <a href="./P3 CarND-Traffic-Sign-Classifier-Project/Traffic_Sign_Classifier.ipynb"><img src="" alt="Overview" width="100%" height="100%"></a>
+           <a href="./P3 CarND-Traffic-Sign-Classifier-Project/Traffic_Sign_Classifier.ipynb"><img src="./P3 CarND-Traffic-Sign-Classifier-Project/examples/result.png" alt="Overview" width="100%" height="100%"></a>
            <br>P3: Traffic Sign Classifier Project
            <br><a href="./P3 CarND-Traffic-Sign-Classifier-Project/" name="p3_code">(code)</a>
         </p>
