@@ -15,9 +15,7 @@ The goals / steps of this project are the following:
 [image2]: ./examples/recoveryfromleft2center.gif "Recovery from Left to Center"
 [image3]: ./examples/CroppedImage.jpg "Cropped Image"
 [image4]: ./examples/FlippedImage.jpg "Flipped Image"
-
-[image5]: ./examples/NvidiaModel.jpg "Model Visualization"
-
+[image5]: ./examples/NvidiaModel.png "Model Visualization"
 [image6]: ./examples/Loss1.png "Model Loss"
 [image7]: ./examples/Loss2.png "Model Loss"
 [image8]: ./examples/Loss3.png "Model Loss"
