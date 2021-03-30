@@ -21,7 +21,7 @@ In this repository you may find the source code of all the projects of [Udacity 
         </p>
     </th>
         <th><p align="center">
-           <a href="https://www.youtube.com/watch?v=H50zBnFf17c"><img src="./P2 Advanced Lane Finding/example/Advanced Lane Finding.gif" alt="Overview" width="80%" height="200%"></a>
+           <a href="https://www.youtube.com/watch?v=H50zBnFf17c"><img src="./P2 Advanced Lane Finding/example/Advanced Lane Finding.gif" alt="Overview" width="100%" height="200%"></a>
            <br>P2: Advanced Lane Finding
            <br><a href="./P2 Advanced Lane Finding/" name="p2_code">(code)</a>
         </p>
@@ -33,7 +33,7 @@ In this repository you may find the source code of all the projects of [Udacity 
         </p>
     </th>
         <th><p align="center">
-           <a href="https://www.youtube.com/watch?v=IqmbVJtUSEs&t=12s"><img src="./P4 CarND-Behavioral-Cloning-P3/examples/P4 Behavioral-Cloning.gif" alt="Overview" width="100%" height="100%"></a>
+           <a href="https://www.youtube.com/watch?v=IqmbVJtUSEs&t=12s"><img src="./P4 CarND-Behavioral-Cloning-P3/examples/P4 Behavioral-Cloning.gif" alt="Overview" width="100%" height="200%"></a>
            <br>P4: Adv. Lane Finding
            <br><a href="./P4 CarND-Behavioral-Cloning-P3" name="p4_code">(code)</a>
         </p>
