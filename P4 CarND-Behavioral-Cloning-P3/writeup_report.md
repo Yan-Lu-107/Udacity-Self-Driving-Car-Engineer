@@ -11,11 +11,11 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/center.png "Original Image"
+[image1]: ./examples/TestImage.jpg "Original Image"
 [image2]: ./examples/recoveryfromleft2center.gif "Recovery from Left to Center"
 
-[image3]: ./examples/CroppedImage.png "Cropped Image"
-[image4]: ./examples/FlippedImage.png "Flipped Image"
+[image3]: ./examples/CroppedImage.jpg "Cropped Image"
+[image4]: ./examples/FlippedImage.jpg "Flipped Image"
 
 [image5]: ./examples/NvidiaModel.png "Model Visualization"
 
@@ -59,7 +59,7 @@ I collected the following data,
 1. Several tracks of driving forwards and several rounds of driving counter-clockwise at the center of the lane
 	To capture good driving behavior, I recorded two laps forwards along the road and another two laps counter-clockwise using center lane driving. Here is an example image of center lane driving:
 
-	![alt text][image1](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/center.png)
+	![alt text][image1](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/TestImage.jpg )
 2. Collecting the data of recovering from the left and right sides of the road
 	I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to driving back to center when it is on the edge of the road. These images show what a recovery looks like starting from left side to the center:
 
@@ -68,12 +68,12 @@ I collected the following data,
 3. Flipping horizontally the images to augment the data and adjusting the steering angle
 	For example, here is an image that has then been flipped:
 
-	![alt text][image1](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/center.png)
-	![alt text][image4](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/FlippedImage.png)
+	![alt text][image1](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/TestImage.jpg )
+	![alt text][image4](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/FlippedImage.jpg)
 
 4. Cropping useless background of the images
-	![alt text][image1](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/center.png)
-	![alt text][image3](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/CroppedImage.png)
+	![alt text][image1](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/TestImage.jpg )
+	![alt text][image3](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/CroppedImage.jpg)
 5. Taking use of left and right camera and setting the offset value to steering angle(the offset value is set to 0.3)
 
 After the collection process, I had 18192 number of data points. I finally randomly shuffled the data set and put 20% of the data into a validation set. 
