@@ -43,7 +43,7 @@ In this repository you may find the source code of all the projects of [Udacity 
 
 ## Table of Contents
 
-#### [P1 - Detecting Lane Lines (basic)](P1 Finding Lane Lines)
+#### [P1 - Detecting Lane Lines (basic)](P1%20Finding%20Lane%20Lines)
  - **Summary:** Detected highway lane lines on a video stream. Used OpencV image analysis techniques to identify lines, including Hough Transforms and Canny edge detection.
  - **Keywords:** Computer Vision
  
