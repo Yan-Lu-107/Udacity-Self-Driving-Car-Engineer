@@ -65,14 +65,13 @@ I collected the following data,
 ![alt text][image2]
 3. Flipping horizontally the images to augment the data and adjusting the steering angle
 	For example, here is an image that has then been flipped:
-
-	![alt text][image1]
-
-	![alt text][image4]
+	|   Original Image  |   Flipped Image    |
+	| ----------------- | ------------------ |
+	|![alt text][image1]| ![alt text][image4]|
 
 4. Cropping useless background of the images
 
-	|  Original Image   |   Cropped Image    |
+	|   Original Image  |   Cropped Image    |
 	| ----------------- | ------------------ |
 	|![alt text][image1]| ![alt text][image3]|
 
