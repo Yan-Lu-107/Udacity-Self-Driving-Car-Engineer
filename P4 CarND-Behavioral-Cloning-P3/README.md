@@ -72,7 +72,10 @@ I collected the following data,
 
 4. Cropping useless background of the images
 
-	![alt text][image1]      	![alt text][image3]
+	|  Original Image   |   Cropped Image    |
+	| ----------------- | ------------------ |
+	|![alt text][image1]| ![alt text][image3]|
+
 
 5. Taking use of left and right camera and setting the offset value to steering angle(the offset value is set to 0.3)
 
