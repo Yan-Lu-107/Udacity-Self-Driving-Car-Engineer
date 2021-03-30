@@ -62,18 +62,18 @@ I collected the following data,
 
 2. Collecting the data of recovering from the left and right sides of the road
 	I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to driving back to center when it is on the edge of the road. These images show what a recovery looks like starting from left side to the center:
-	
 ![alt text][image2]
-
 3. Flipping horizontally the images to augment the data and adjusting the steering angle
 	For example, here is an image that has then been flipped:
 
 	![alt text][image1]
+
 	![alt text][image4]
 
 4. Cropping useless background of the images
 
-	![alt text][image1]
+	![alt text][image1
+	
 	![alt text][image3]
 
 5. Taking use of left and right camera and setting the offset value to steering angle(the offset value is set to 0.3)
