@@ -13,7 +13,6 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/TestImage.jpg "Original Image"
 [image2]: ./examples/recoveryfromleft2center.gif "Recovery from Left to Center"
-
 [image3]: ./examples/CroppedImage.jpg "Cropped Image"
 [image4]: ./examples/FlippedImage.jpg "Flipped Image"
 
@@ -63,17 +62,17 @@ I collected the following data,
 2. Collecting the data of recovering from the left and right sides of the road
 	I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to driving back to center when it is on the edge of the road. These images show what a recovery looks like starting from left side to the center:
 
-	![alt text][image2](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/recoveryfromleft2center.gif)
+	![alt text][image2]
 
 3. Flipping horizontally the images to augment the data and adjusting the steering angle
 	For example, here is an image that has then been flipped:
 
-	![alt text][image1](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/TestImage.jpg )
-	![alt text][image4](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/FlippedImage.jpg)
+	![alt text][image1]
+	![alt text][image4]
 
 4. Cropping useless background of the images
-	![alt text][image1](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/TestImage.jpg )
-	![alt text][image3](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/CroppedImage.jpg)
+	![alt text][image1]
+	![alt text][image3]
 5. Taking use of left and right camera and setting the offset value to steering angle(the offset value is set to 0.3)
 
 After the collection process, I had 18192 number of data points. I finally randomly shuffled the data set and put 20% of the data into a validation set. 
@@ -99,21 +98,18 @@ Layer 7: Fully connected layer with 100 neurons, ELU activation
 Layer 8: Fully connected layer with 50 neurons, ELU activation
 Layer 9: Fully connected layer with 10 neurons, ELU activation
 Layer 10: Fully connected layer with 1 neurons, ELU activation
-	![alt text][image5](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/NvidiaModel.png)
+	![alt text][image5]
 #### 3. Attempts to reduce overfitting in the model
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that the loss for training set and validation set become so different with epoch increasing.The mean squared error on the training set becomes lower, but the mean squared error on the validation set are stable after epoch at 8. 
-	![alt text][image6](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/loss1.png)
+	![alt text][image6]
 
 After I changed epoch to 8, the validation loss increased after epoch 3. so I tried to add dropout.
-	![alt text][image7](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/loss2.png)
+	![alt text][image7]
 After dropout added, the loss chart looks much better, but the performance of the car is still not good.
-	![alt text][image8](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/loss3.png)
-
-
+	![alt text][image8]
 Then I tried to decrease the epoch and it turns out the car performance best at epoch 7.
-	![alt text][image9](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/CarND-Behavioral-Cloning-P3/examples/loss4.png)
-
+	![alt text][image9]
 #### 4. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 141).
