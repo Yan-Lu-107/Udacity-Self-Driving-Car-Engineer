@@ -39,9 +39,6 @@ In this repository you may find the source code of all the projects of [Udacity 
         </p>
     </th>
   </tr>
-  <tr>
-    
-  </tr>
 </table>
 
 
