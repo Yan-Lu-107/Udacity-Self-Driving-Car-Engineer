@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 [image3]: ./examples/CroppedImage.jpg "Cropped Image"
 [image4]: ./examples/FlippedImage.jpg "Flipped Image"
 
-[image5]: ./examples/NvidiaModel.png "Model Visualization"
+[image5]: ./examples/NvidiaModel.jpg "Model Visualization"
 
 [image6]: ./examples/loss1.png "Model Loss"
 [image7]: ./examples/loss2.png "Model Loss"
@@ -71,6 +71,7 @@ I collected the following data,
 	![alt text][image4]
 
 4. Cropping useless background of the images
+
 	![alt text][image1]
 	![alt text][image3]
 5. Taking use of left and right camera and setting the offset value to steering angle(the offset value is set to 0.3)
