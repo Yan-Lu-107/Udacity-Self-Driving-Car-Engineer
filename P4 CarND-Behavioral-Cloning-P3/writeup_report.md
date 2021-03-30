@@ -18,10 +18,10 @@ The goals / steps of this project are the following:
 
 [image5]: ./examples/NvidiaModel.jpg "Model Visualization"
 
-[image6]: ./examples/loss1.png "Model Loss"
-[image7]: ./examples/loss2.png "Model Loss"
-[image8]: ./examples/loss3.png "Model Loss"
-[image9]: ./examples/loss4.png "Model Loss"
+[image6]: ./examples/Loss1.png "Model Loss"
+[image7]: ./examples/Loss2.png "Model Loss"
+[image8]: ./examples/Loss3.png "Model Loss"
+[image9]: ./examples/Loss4.png "Model Loss"
 
 
 ## Rubric Points
@@ -62,7 +62,6 @@ I collected the following data,
 
 2. Collecting the data of recovering from the left and right sides of the road
 	I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to driving back to center when it is on the edge of the road. These images show what a recovery looks like starting from left side to the center:
-
 	![alt text][image2]
 
 3. Flipping horizontally the images to augment the data and adjusting the steering angle
