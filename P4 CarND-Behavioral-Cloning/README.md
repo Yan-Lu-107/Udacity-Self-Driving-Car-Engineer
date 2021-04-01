@@ -2,15 +2,6 @@
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-
-The goals / steps of this project are the following:
-* Use the simulator to collect data of good driving behavior
-* Build, a convolution neural network in Keras that predicts steering angles from images
-* Train and validate the model with a training and validation set
-* Test that the model successfully drives around track one without leaving the road
-* Summarize the results with a written report
-
-
 [//]: # (Image References)
 
 [image1]: ./examples/TestImage.jpg "Original Image"
@@ -22,6 +13,17 @@ The goals / steps of this project are the following:
 [image7]: ./examples/Loss2.png "Model Loss"
 [image8]: ./examples/Loss3.png "Model Loss"
 [image9]: ./examples/Loss4.png "Model Loss"
+[image10]: ./examples/Behavioral-Cloning.gif "output gif"
+
+The goals / steps of this project are the following:
+* Use the simulator to collect data of good driving behavior
+* Build, a convolution neural network in Keras that predicts steering angles from images
+* Train and validate the model with a training and validation set
+* Test that the model successfully drives around track one without leaving the road
+* Summarize the results with a written report
+
+
+Check out the Video of the Behavioral Cloning Result (click for full video): [![Behavioral Cloning](image10)](https://www.youtube.com/watch?v=0KnBOUUo0SM)
 
 
 ## Rubric Points
