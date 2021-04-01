@@ -4,8 +4,8 @@
 <img src="examples/laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
 
 
-<a href="https://www.youtube.com/watch?v=H50zBnFf17c"><img src="./P1 Finding Lane Lines/Finding Lane Lines.gif" alt="Overview" width="100%" height="100%"></a>
-<br>Finding Lane Lines output
+<th><a href="https://www.youtube.com/watch?v=H50zBnFf17c"> <img src="./P1 Finding Lane Lines/Finding Lane Lines.gif" alt="Overview" width="100%" height="100%"></a>
+</th>
 
 Overview
 ---
