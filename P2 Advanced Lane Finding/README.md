@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 * Implement plausibilization/tracking mechanisms for continuous lane detection and processing based on the video
 * Feed the project video to the developed pipeline and visualize the estimated lane as well as the estimated curvatures (left and right) and the vehicle's offset from the lane center
 
-Check out the Video of the Advanced Lane Finding Result (click for full video): [![Advanced Lane Finding Result ](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/WatchOnYoutube.jpg?raw=true)](https://youtu.be/H50zBnFf17c)
+Check out the Video of the Advanced Lane Finding Result (click for full video): [![Advanced Lane Finding Result ](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/example/Advanced%20Lane%20Finding.gif)](https://youtu.be/H50zBnFf17c)
 
 
 The Steps
