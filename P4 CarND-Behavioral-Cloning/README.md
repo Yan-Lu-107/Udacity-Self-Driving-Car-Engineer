@@ -13,7 +13,6 @@
 [image7]: ./examples/Loss2.png "Model Loss"
 [image8]: ./examples/Loss3.png "Model Loss"
 [image9]: ./examples/Loss4.png "Model Loss"
-[image10]: ./examples/Behavioral-Cloning.gif "output gif"
 
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
@@ -23,7 +22,7 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
-Check out the Video of the Behavioral Cloning Result (click for full video): [![Behavioral Cloning](image10)](https://www.youtube.com/watch?v=0KnBOUUo0SM)
+Check out the Video of the Behavioral Cloning Result (click for full video): [![Behavioral Cloning](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P4%20CarND-Behavioral-Cloning/examples/Behavioral-Cloning.gif)](https://www.youtube.com/watch?v=0KnBOUUo0SM)
 
 
 ## Rubric Points
