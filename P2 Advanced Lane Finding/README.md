@@ -23,9 +23,6 @@ The goals / steps of this project are the following:
 Check out the Video of the Advanced Lane Finding Result (click for full video): [![Advanced Lane Finding Result ](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/example/Advanced%20Lane%20Finding.gif)](https://youtu.be/H50zBnFf17c)
 
 
-The Steps
-The steps of this project are listed below. You can have a look at Advanced_Lane_Lines.ipynb for the code.
-
 ### Distortion Correction
 
 The images for camera calibration are stored in the folder called camera_cal. I compute the camera matrix and distortion co-efficients to undistort the image.
