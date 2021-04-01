@@ -4,8 +4,8 @@
 <img src="examples/laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
 
 
-<th><a href="https://www.youtube.com/watch?v=H50zBnFf17c"> <img src="./P1 Finding Lane Lines/Finding Lane Lines.gif" alt="Overview" width="100%" height="100%"></a>
-</th>
+[![Udacity - Self-Driving Car NanoDegree](./P1%20Finding%20Lane%20Lines/Finding%20Lane%20Lines.gif)](https://www.youtube.com/watch?v=H50zBnFf17c)
+
 
 Overview
 ---
