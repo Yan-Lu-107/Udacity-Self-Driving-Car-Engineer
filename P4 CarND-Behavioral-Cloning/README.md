@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 
 
 
-Check out the Video of the Behavioral Cloning Result (click for full video): [![alt text][image10]](https://www.youtube.com/watch?v=0KnBOUUo0SM)
+Check out the Video of the Behavioral Cloning Result (click for full video): [![alt text][image10]](https://www.youtube.com/watch?v=IqmbVJtUSEs)
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
