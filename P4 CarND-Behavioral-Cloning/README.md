@@ -59,14 +59,13 @@ I collected the following data,
 1. Several tracks of driving forwards and several rounds of driving counter-clockwise at the center of the lane
 	To capture good driving behavior, I recorded two laps forwards along the road and another two laps counter-clockwise using center lane driving. Here is an example image of center lane driving:
 
-	![alt text][image1]
-
 2. Collecting the data of recovering from the left and right sides of the road
 	I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to driving back to center when it is on the edge of the road. These images show what a recovery looks like starting from left side to the center:
 
 	|  Driving at center      | Recover from the left to the center |
 	| ----------------------- | ----------------------------------- |
 	|![alt text][image1]      | ![alt text][image2]                 |
+
 3. Flipping horizontally the images to augment the data and adjusting the steering angle
 	For example, here is an image that has then been flipped:
 	|   Original Image  |   Flipped Image    |
