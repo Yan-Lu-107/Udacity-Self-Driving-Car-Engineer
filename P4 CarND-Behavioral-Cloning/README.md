@@ -22,8 +22,9 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
-Check out the Video of the Behavioral Cloning Result (click for full video): [![Behavioral Cloning](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P4%20CarND-Behavioral-Cloning/examples/Behavioral-Cloning.gif)](https://www.youtube.com/watch?v=0KnBOUUo0SM)
+Check out the Video of the Behavioral Cloning Result (click for full video): [![Behavioral Cloning]![alt text][image2]](https://www.youtube.com/watch?v=0KnBOUUo0SM)
 
+Check out the Video of the Behavioral Cloning Result (click for full video): [![Behavioral Cloning](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P4%20CarND-Behavioral-Cloning/examples/Behavioral-Cloning.gif)](https://www.youtube.com/watch?v=0KnBOUUo0SM)
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
