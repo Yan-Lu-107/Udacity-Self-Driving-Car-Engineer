@@ -33,7 +33,7 @@ The images for camera calibration are stored in the folder called camera_cal. I 
 ![image2](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/undistion_output.jpg?raw=true)
 ### Gradients and color thresholds. I applied thresholds on gradients and colors (in RGB and HLS color spaces) to obtain a binary thresholded image.
 ![image3](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/color_thresh.jpg?raw=true)
-###Perspective transform ("birds-eye view"). After manually examining a sample image, I extracted the vertices to perform a perspective transform. The polygon with these vertices is drawn on the image for visualization. Destination points are chosen such that straight lanes appear more or less parallel in the transformed image.
+### Perspective transform ("birds-eye view"). After manually examining a sample image, I extracted the vertices to perform a perspective transform. The polygon with these vertices is drawn on the image for visualization. Destination points are chosen such that straight lanes appear more or less parallel in the transformed image.
 ![image4](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P2%20Advanced%20Lane%20Finding/Output_Process_Image/warped.jpg?raw=true)
 ### Detect lane pixels (sliding window search). I then perform a sliding window search, starting with the base likely positions of the 2 lanes, calculated from the histogram. I have used 10 windows of width 100 pixels.
 The x & y coordinates of non zeros pixels are found, a polynomial is fit for these coordinates and the lane lines are drawn.
