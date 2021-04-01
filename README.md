@@ -16,7 +16,7 @@ In this repository you may find the source code of all the projects of [Udacity 
     </th>
         <th><p align="center">
            <a href="https://www.youtube.com/watch?v=H50zBnFf17c"><img src="./P1 Finding Lane Lines/Finding Lane Lines.gif" alt="Overview" width="100%" height="100%"></a>
-           <br>P2: Finding Lane Lines
+           <br>P1: Finding Lane Lines
            <br><a href="./P1 Finding Lane Lines" name="p1_code">(code)</a>
         </p>
     </th>
