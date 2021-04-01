@@ -1,17 +1,12 @@
 # **Finding Lane Lines on the Road** 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-Check out the Video of the Finding Lane Lines Result (click for full video) [![Finding Lane Lines Result ](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P1%20Finding%20Lane%20Lines/Finding%20Lane%20Lines.gif)](https://www.youtube.com/watch?v=0KnBOUUo0SM)
-
 Overview
 ---
 
 When we drive, we use our eyes to decide where to go.  The lines on the road that show us where the lanes are act as our constant reference for where to steer the vehicle.  Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm. In this project lane lines in images will be detected using Python and OpenCV.   
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
+Check out the Video of the Finding Lane Lines Result (click for full video): [![Finding Lane Lines Result ](https://github.com/Yan-Lu-107/Udacity-Self-Driving-Car-Engineer/blob/main/P1%20Finding%20Lane%20Lines/Finding%20Lane%20Lines.gif)](https://www.youtube.com/watch?v=0KnBOUUo0SM)
 
 ---
 
@@ -29,9 +24,6 @@ My pipeline consisted of 5 steps.
 6. In order to draw a single line on the left and right lanes, I added the functions of lines that fits the lane curve
 7. visualize the plot
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
